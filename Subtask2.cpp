@@ -1,7 +1,5 @@
 #include <iostream>   // for input and output
-#include <cstdlib>    // for rand()
-#include <ctime>      // for time()
-
+#include <string>
 using namespace std;
 
 // Function 1: Decimal to Binary
@@ -70,15 +68,6 @@ int hexadecimalToDecimal(string hex) {
     return decimal;
 }
 
-// Function 5: Demo - Generate random number and show binary
-void demo() {
-    srand(time(0)); // set random seed
-    int randomNum = rand() % 100; // random number between 0 and 99
-
-    cout << "Random number: " << randomNum << endl;
-    cout << "Binary: " << decimalToBinary(randomNum) << endl;
-}
-
 int main() {
     int choice;
 
@@ -88,9 +77,8 @@ int main() {
         cout << "2. Binary to Decimal" << endl;
         cout << "3. Decimal to Hexadecimal" << endl;
         cout << "4. Hexadecimal to Decimal" << endl;
-        cout << "5. Demo (Random number to Binary)" << endl;
-        cout << "6. Exit" << endl;
-        cout << "Enter your choice (1-6): ";
+        cout << "5. Exit" << endl;
+        cout << "Enter your choice (1-5): ";
         cin >> choice;
 
         if (choice == 1) {
@@ -118,16 +106,13 @@ int main() {
             cout << "Decimal: " << hexadecimalToDecimal(hex) << endl;
         }
         else if (choice == 5) {
-            demo();
-        }
-        else if (choice == 6) {
             cout << "Exiting program..." << endl;
         }
         else {
             cout << "Invalid choice. Try again." << endl;
         }
 
-    } while (choice != 6);
+    } while (choice != 5);
 
     return 0;
 }
