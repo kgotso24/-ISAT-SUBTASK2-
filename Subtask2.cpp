@@ -1,5 +1,6 @@
 #include <iostream>   // for input and output
 #include <string>
+# include <cmaths>
 using namespace std;
 
 // Function 1: Decimal to Binary
