@@ -71,7 +71,7 @@ int hexadecimalToDecimal(string hex) {
 int main() {
     int choice;
 
-    do {
+    {
         cout << "\n==== MENU ====" << endl;
         cout << "1. Decimal to Binary" << endl;
         cout << "2. Binary to Decimal" << endl;
