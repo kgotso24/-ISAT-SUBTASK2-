@@ -81,7 +81,7 @@ int main() {
         cout << "5. Exit" << endl;
         cout << "Enter your choice (1-5): ";
         cin >> choice;
-
+// the if else statement of the choice of a user 
         if (choice == 1) {
             int num;
             cout << "Enter a decimal number: ";
@@ -112,7 +112,7 @@ int main() {
         else {
             cout << "Invalid choice. Try again." << endl;
         }
-
+// i have include the while loop 
     } while (choice != 5);
 
     return 0;
